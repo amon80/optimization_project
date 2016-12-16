@@ -5,7 +5,7 @@ ceq = [];
 i = 1;
 %Norms constraints
 for j=1:n
-    ceq(i) = norm(W(i,:)) - 1;
+    ceq(i) = norm(W(i,:))^2 - 1;
     i = i + 1;
 end
 
