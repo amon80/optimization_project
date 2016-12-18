@@ -1,7 +1,7 @@
 function [c, ceq] = negentropy_multy_constraints(W)
 c = [];
 n = size(W,1);
-ceq = [];
+ceq = zeros(n + n*(n-1)/2);
 i = 1;
 %Norms constraints
 for j=1:n
